@@ -1,0 +1,18 @@
+count = 0
+total = 0.0
+
+while True:
+    ask = input("Enter a number: ")
+    
+    try:    
+        if ask == "done":
+            print(f"total:{total}\ncount:{count}\naverage:{total/count}")
+            break
+        num = float(ask)
+        count = count + 1
+        total = total + num
+        avg = total/count
+
+    except:
+        print("Invalid input")
+        continue
